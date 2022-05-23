@@ -1,0 +1,159 @@
+:root {
+    --sidebar: #6EA24D;
+    --text: #000;
+    --sidebartext: #221100;
+    --content: #EBF5DF;
+    --contenttext: #3C620E;
+    --lcolor: #FFF;
+    --lvisit: #0A210F;
+    --lhover: #B5E994;
+    --lactive: #900E51;
+    --h1: #0A210F;
+    --h1content: #4B3F72;
+    --tabn: #DFDFDF;
+    --box: #FFF;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+
+}
+html, body {
+    margin: 0px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1%;
+  }
+p {
+    line-height: 1.5;
+}
+.layout {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+  }
+  .sidebar {
+    /* background: linear-gradient(#E6FF9B, #dfff7e); */
+    background-color: var(--sidebar);
+    color: var(--sidebartext);
+    width: 20%;
+    padding: 2%;
+    font-family: "Space Grotesk";
+}
+/* .sidebar a:hover {
+    background-color: #E6FF9B;
+} */
+.content {
+    background-color: var(--content);
+    color: var(--contenttext);
+    padding: 2%;
+    width: 80%;
+
+}
+h1 {
+    color: var(--h1);
+    font-family: "Space Grotesk";
+}
+h1:hover {
+    color: var(--h1content);
+    font-style: italic;
+    text-decoration: overline;
+}
+.sidebar h1 {
+    width: 2em;
+}
+.game {
+    background-color: var(--text)
+    height: 100px;
+    width: 150px;
+    align-content: center;
+}
+a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text);
+    margin: 2%;
+}
+a:visited {
+    text-decoration: line-through;
+    color: var(--lvisit);
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--lhover);
+}
+.sidebar a:hover {
+    letter-spacing: 1em;
+}
+a:active {
+    color: var(--lactive);
+}
+.sidebar a:active {
+    color: var(--lcolor);
+
+}
+input[type=text] {
+    /* border-bottom: solid 5px var(--sidebar); */
+    border-right: solid 5px var(--sidebar);
+    border-bottom: solid 5px var(--sidebar);
+    border-top:  solid 0px;
+    border-left: solid 0px;
+    font-size: 1em;
+    /* border-radius: 20px; */
+  }
+/* input[type=text]:hover {
+      color: var(--tabn);
+  } */
+#sidebar a:link {
+    padding: 10px;
+}
+input[id='box'] {
+    background-color: var(--box);
+    color: var(--h1content);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+}
+checkbox:checked {
+    color: var(--box);
+    background-color: var(--sidebar);
+}
+textarea {
+    border-right, border-bottom: solid 4px #505050;
+}
+table {
+    border-collapse: collapse;
+    width: fit-content;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+th:first-child {
+    text-align: center;
+}
+th, td:first-child {
+    text-transform: uppercase;
+}
+tr:nth-child(even) {
+    background-color: var(--tabn);
+}
+
+@media only screen and (max-width: 600px) {
+/* add a hamburger menu icon */
+/* change the styling on links of sidebar in mobile */
+}
+
+@media only screen and (min-width: 900px) {
+
+}
+
