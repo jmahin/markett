@@ -16,6 +16,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
+    font-size: 12pt;
 
 }
 html, body {
@@ -44,7 +45,7 @@ p {
     color: var(--sidebartext);
     width: 100%;
     height: 10%;
-    padding: 2%;
+    padding: 5%;
     font-family: "Space Grotesk";
     display: flex;
 }
@@ -150,13 +151,32 @@ th, td:first-child {
 tr:nth-child(even) {
     background-color: var(--tabn);
 }
+.resource {
+    background-color: var(--lhover);
+    padding: 2%;
+    width: 20%;
+    margin: .5%;
+    outline: 2px solid var(--box);
+    outline-offset: -15px;
+
+}
 
 @media only screen and (max-width: 600px) {
 /* add a hamburger menu icon */
 /* change the styling on links of sidebar in mobile */
+
+
+.resource {
+    outline: 0px;
+    outline-offset: 0px;
+}
+
 }
 
 @media only screen and (min-width: 900px) {
-
+    .resource {
+        outline: 0px;
+        outline-offset: 0px;
+    }
 }
 
