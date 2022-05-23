@@ -30,7 +30,7 @@ p {
 .layout {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     height: 100%;
     width: 100%;
@@ -42,9 +42,11 @@ p {
     /* background: linear-gradient(#E6FF9B, #dfff7e); */
     background-color: var(--sidebar);
     color: var(--sidebartext);
-    width: 20%;
+    width: 100%;
+    height: 10%;
     padding: 2%;
     font-family: "Space Grotesk";
+    display: flex;
 }
 /* .sidebar a:hover {
     background-color: #E6FF9B;
@@ -53,7 +55,8 @@ p {
     background-color: var(--content);
     color: var(--contenttext);
     padding: 2%;
-    width: 80%;
+    width: 100%;
+    height: 80%;
 
 }
 h1 {
