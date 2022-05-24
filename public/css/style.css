@@ -1,5 +1,6 @@
 :root {
-    --sidebar: #6EA24D;
+    --navhover: hsl(97, 72%, 76%);
+    --sidebar: #6ea24d;
     --text: #000;
     --sidebartext: #221100;
     --content: #EBF5DF;
@@ -13,18 +14,14 @@
     --tabn: #DFDFDF;
     --box: #FFF;
 }
+html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text);
-    font-size: 12pt;
-
-}
-html, body {
     margin: 0px;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
     letter-spacing: -1%;
-  }
+}
 p {
     line-height: 1.5;
 }
@@ -33,28 +30,32 @@ p {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
-    height: 100%;
+    height: 80%;
     width: 100%;
     margin: 0px;
     padding: 0px;
     position: absolute;
-  }
-  .sidebar {
-    /* background: linear-gradient(#E6FF9B, #dfff7e); */
+}
+.sidebar {
+    /* background: linear-gradient(var(--contenttext), var(--sidebar)); */
     background-color: var(--sidebar);
     color: var(--sidebartext);
     width: 100%;
-    height: 10%;
-    padding: 5%;
+    padding: 1%;
     font-family: "Space Grotesk";
     display: flex;
+    text-align: center;
+    display: inline-block;
+    /* float: none; */
+    /* vertical-align: top; */
 }
+
 /* .sidebar a:hover {
     background-color: #E6FF9B;
 } */
 .content {
-    background-color: var(--content);
-    color: var(--contenttext);
+    background-color: var(--box);
+    color: var(--text);
     padding: 2%;
     width: 100%;
     height: 80%;
@@ -64,59 +65,95 @@ h1 {
     color: var(--h1);
     font-family: "Space Grotesk";
 }
+
 h1:hover {
     color: var(--h1content);
-    font-style: italic;
-    text-decoration: overline;
 }
-.sidebar h1 {
+
+.logo h1 {
     width: 2em;
+    color: var(--lcolor);
+    margin: 2%;
 }
-.game {
-    background-color: var(--text)
-    height: 100px;
-    width: 150px;
-    align-content: center;
+
+.logo h1:hover {
+    text-decoration: overline;
+    font-style: italic;
 }
+h3 {
+    font-family: "Playfair Display";
+}
+footer {
+    background-color: var(--sidebar);
+    height: 20%;
+    color: var(--content);
+    font-family: "Muli";
+    text-align: center;
+    padding: 1%;
+    height: 100vh;
+
+}
+
 a:link {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text);
     margin: 2%;
 }
+
 a:visited {
     text-decoration: line-through;
     color: var(--lvisit);
 }
+
 a:hover {
     text-decoration: underline;
     color: var(--lhover);
 }
-.sidebar a:hover {
+
+/* .sidebar a:hover {
     letter-spacing: 1em;
-}
+} */
 a:active {
     color: var(--lactive);
 }
+
 .sidebar a:active {
     color: var(--lcolor);
 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    height: 20px;
+}
+
+li a:hover {
+    background-color: var(--navhover);
+    color: var(--contenttext);
+}
+b {
+    color: var(--h1);
 }
 input[type=text] {
     /* border-bottom: solid 5px var(--sidebar); */
     border-right: solid 5px var(--sidebar);
     border-bottom: solid 5px var(--sidebar);
-    border-top:  solid 0px;
+    border-top: solid 0px;
     border-left: solid 0px;
     font-size: 1em;
     /* border-radius: 20px; */
-  }
+}
+
 /* input[type=text]:hover {
       color: var(--tabn);
   } */
-#sidebar a:link {
-    padding: 10px;
-}
 input[id='box'] {
     background-color: var(--box);
     color: var(--h1content);
@@ -127,50 +164,68 @@ input[id='box'] {
     height: 3em;
     text-align: center;
 }
+
 checkbox:checked {
     color: var(--box);
     background-color: var(--sidebar);
 }
+
 textarea {
-    border-right, border-bottom: solid 4px #505050;
+    border-right,
+    border-bottom: solid 4px #505050;
 }
+
 table {
     border-collapse: collapse;
     width: fit-content;
 }
-th, td {
+
+th,
+td {
     text-align: left;
     padding: 8px;
 }
+
 th:first-child {
     text-align: center;
 }
-th, td:first-child {
+
+th,
+td:first-child {
     text-transform: uppercase;
 }
+
 tr:nth-child(even) {
     background-color: var(--tabn);
 }
+
 .resource {
-    background-color: var(--lhover);
+    background-color: var(--content);
     padding: 2%;
     width: 20%;
     margin: .5%;
-    outline: 2px solid var(--box);
-    outline-offset: -15px;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    /* outline: 2px solid var(--box);
+    outline-offset: -15px; */
 
 }
+.allresources {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
 @media only screen and (max-width: 600px) {
-/* add a hamburger menu icon */
-/* change the styling on links of sidebar in mobile */
+    /* add a hamburger menu icon */
+    /* change the styling on links of sidebar in mobile */
 
 
-.resource {
+    /* .resource {
     outline: 0px;
     outline-offset: 0px;
-}
-
+} */
+/* modify flex for resources */
 }
 
 @media only screen and (min-width: 900px) {
@@ -179,4 +234,3 @@ tr:nth-child(even) {
         outline-offset: 0px;
     }
 }
-
