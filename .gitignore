@@ -7,3 +7,4 @@ npm-debug.log
 extracss.css
 views/pages/login.ejs
 node_modules
+index.html

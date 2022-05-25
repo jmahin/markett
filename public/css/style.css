@@ -137,12 +137,10 @@ li {
 }
 
 li a:hover {
-    /* background-color: var(--navhover); */
-    background: linear-gradient(var(--contenttext), var(--sidebar));
     color: var(--box);
-    /* height: 100px; */
-    border-radius: 20px;
-    padding: 1%;
+    text-decoration: underline;
+    text-decoration-color: var(--box);
+    text-underline-offset: 10px;
 }
 b {
     color: var(--h1);
