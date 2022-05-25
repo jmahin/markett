@@ -9,15 +9,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
 
-let resName = 'Brookline Farmers Market';
-let resAddress = 'Parking Lot, Centre Street West, Brookline, MA 02446';
-let hoursOpen = 'Thursday 1:30-6:30';
-let season = 'first Thursday in June until the last Thursday before Thanksgiving';
-let resWeb = 'brooklinefarmersmarket.com';
-
 app.get('/', (request, response) => {
     response.render('pages/index'), {
-        
+
     }
 });
 
