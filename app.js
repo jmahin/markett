@@ -36,3 +36,10 @@ app.get('/', (request, response) => {
 // app.get('/login', (request, response) => {
 //     response.render('pages/login');
 // });
+
+
+// Contact form
+app.post("/formsubmitted", function(request, response){
+    response.send("The form has been submitted.");
+    response.render('pages/formsubmitted');
+});
