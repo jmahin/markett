@@ -1,16 +1,17 @@
-<h1>Add a resource to the database:</h1>
-<form>
+<%- include('../partials/head') -%>
+    <%- include('../partials/nav') -%>
+        <h1>Add a resource to the database:</h1>
+        <form>
 
-    <b>Name of market: </b><input type="text" id="marketName" placeholder="e.g. Haymarket"><br>
+            <b>Name of market: </b><input type="text" id="marketName" placeholder="e.g. Haymarket"><br>
 
-    <b>Address: </b><input type="text" id="marketAddress" placeholder="e.g. 1 City Hall Square ">
+            <b>Address: </b><input type="text" id="marketAddress" placeholder="e.g. 1 City Hall Square ">
 
-    <b>Hours of operation: </b><input type="text" id="marketHours" placeholder="e.g. 8am to 4pm">
-    <b>Season: </b><input type="text" id="marketSeason" placeholder="e.g. May 1 to August 20">
-    <b>Website: </b><input type="text" id="marketWebLink" placeholder="e.g. farmersmarket.com">
+            <b>Hours of operation: </b><input type="text" id="marketHours" placeholder="e.g. 8am to 4pm">
+            <b>Season: </b><input type="text" id="marketSeason" placeholder="e.g. May 1 to August 20">
+            <b>Website: </b><input type="text" id="marketWebLink" placeholder="e.g. farmersmarket.com">
 
-    <p><button type="button">Submit!</button></p>
+            <p><button type="button">Submit!</button></p>
 
-</form>
-
-<p><a href="forgot.html">Forgot password?</a></p>
+        </form>
+        <%- include('../partials/footer') -%>

@@ -5,3 +5,5 @@ npm-debug.log
 .DS_Store
 /public/images
 extracss.css
+views/pages/login.ejs
+node_modules

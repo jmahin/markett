@@ -15,7 +15,7 @@
 
     <section class="layout">
 
-        <div class="sidebar">
+        <header>
             <div class="logo">
                 <h1>markett</h1>
             </div>
@@ -31,19 +31,38 @@
             <!-- <p align="center">
                 <button onclick="hideSide()"> Click to hide the sidebar!</button>
             </p> -->
-        </div>
+        </header>
         <div class="content">
 
             <h1>Discover farmers' markets and coops in the greater Boston area:</h1>
             <div class="allresources">
+                
+                
                 <div class="resource">
                     <!-- Template -->
                     <h3>
-                        <%= resname %>
+                        Brookline Farmers' Market
                     </h3>
                     <p>
                         <b>Address:</b>
-                        <%= address %><br>
+                        Parking Lot, Centre Street West, Brookline, MA 02446<br>
+                            <b>Hours of operation:</b>
+                            Thursday 1:30-6:30<br>
+                                <b>Season:</b>
+                                first Thursday in June until the last Thursday before Thanksgiving<br>
+                                    <b>Website:</b>
+                                    <a href="https://www.brooklinefarmersmarket.com/">brooklinefarmersmarket.com</a><br>
+                    </p>
+                </div>
+                
+                <div class="resource">
+                    <!-- Template -->
+                    <h3>
+                        <%= resName %>
+                    </h3>
+                    <p>
+                        <b>Address:</b>
+                        <%= resAddress %><br>
                             <b>Hours of operation:</b>
                             <%= hoursOpen %><br>
                                 <b>Season:</b>
@@ -55,7 +74,42 @@
             
             </div>
 
-            <p> text otherwise appears like this!</p>
+            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+        <p>
+            <center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>M.J.</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>N.R.</td>
+                            <td>4900</td>
+                        </tr>
+                        <tr>
+                            <td>L.C.</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <td>N.H.</td>
+                            <td>2000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </center>
+
+
+        </p>
+        
+        
         </div>
 
     </section>

@@ -1,0 +1,28 @@
+{
+  "name": "webappproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmahin/webappproject.git"
+  },
+  "keywords": [
+    "Boston"
+  ],
+  "author": "Mahin Jalalkhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmahin/webappproject/issues"
+  },
+  "homepage": "https://github.com/jmahin/webappproject#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  }
+}
