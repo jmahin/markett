@@ -86,7 +86,8 @@ h3 {
     font-family: "Playfair Display";
 }
 footer {
-    background-color: var(--sidebar);
+    /* background-color: var(--sidebar); */
+    background-color: var(--text);
     color: var(--content);
     font-family: "Muli";
     text-align: center;

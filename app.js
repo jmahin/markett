@@ -8,7 +8,6 @@ const PORT = 3000;
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
-// method override
 // app.use(methodOverride('_method'));
 
 app.set('view engine', 'ejs');
@@ -18,7 +17,7 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (request, response) => {
-    response.render('pages/index')
+    response.render('pages/admin')
 })
 
 // app.get('/', (request, response) => {
