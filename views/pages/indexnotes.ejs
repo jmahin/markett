@@ -1,0 +1,37 @@
+<%- include('../partials/head') -%>
+
+
+
+    <div class="content">
+
+        <h1>Discover farmers markets and coöps in the greater Boston area:</h1>
+
+        <div class="allresources">
+            <div class="resource">
+                <%# Template %>
+                <% for (indvRes of resArray) { %>
+                
+                   
+                  <h3>Resource name</h3>
+                  <p>
+                        <b>Address:</b>
+                        <br>
+                            <b>Hours of operation:</b>
+                            <br>
+                                <b>Season:</b>
+                                <br>
+                                    <b>Website:</b>
+                                    <a href="">
+                                        
+                                    </a><br>
+                                    <% } %>
+                    </p>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <%- include('../partials/footer') -%>

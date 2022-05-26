@@ -43,6 +43,12 @@ app.get('/login', (request, response) => {
 app.get('/formsubmitted', (request, response) => {
     response.render('pages/formsubmitted');
 });
+app.get('/addaresource', (request, response) => {
+    response.render('pages/addaresource');
+});
+app.get('/resadded', (request, response) => {
+    response.render('pages/resadded');
+});
 
 // Contact form
 app.post("/formsubmitted", function(request, response){

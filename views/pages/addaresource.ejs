@@ -1,18 +1,16 @@
 <%- include('../partials/head') -%>
-
+<div class="content">
 <h1>Add a resource</h1>
 <p>Would you like to add a resource to our list? Add all relevant info here:</p>
 <p>
     <form action="/resadded" method="get">
         <b>Name of resource: </b><input type="text" id="resName" placeholder="e.g. Copley Square Farmers Market" required><br>
         <b>Address: </b><input type="text" id="resAddress" placeholder="e.g. 139 St James Ave" required><br>
-        <b>Address: </b><input type="text" id="hoursOpen" placeholder="e.g. Thursday 8am-5pm" required><br>
-        <b>Address: </b><input type="text" id="season" placeholder="e.g. May 13 - Nov 22, 2022" required><br>
-        <b>Address: </b><input type="text" id="resWeb" placeholder="e.g. https://www.massfarmersmarkets.org/copley"><br>
-
-    
-    
+        <b>Hours of operation: </b><input type="text" id="hoursOpen" placeholder="e.g. Thursday 8am-5pm" required><br>
+        <b>Season: </b><input type="text" id="season" placeholder="e.g. May 13 - Nov 22, 2022" required><br>
+        <b>Website: </b><input type="text" id="resWeb">
+        <p><button type="button">Submit</button></p>
     </form>
 </p>
-
+</div>
 <%- include('../partials/footer') -%>
