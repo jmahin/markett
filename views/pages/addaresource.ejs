@@ -1,16 +1,37 @@
 <%- include('../partials/head') -%>
-<div class="content">
-<h1>Add a resource</h1>
-<p>Would you like to add a resource to our list? Add all relevant info here:</p>
-<p>
-    <form action="/resadded" method="get">
-        <b>Name of resource: </b><input type="text" id="resName" placeholder="e.g. Copley Square Farmers Market" required><br>
-        <b>Address: </b><input type="text" id="resAddress" placeholder="e.g. 139 St James Ave" required><br>
-        <b>Hours of operation: </b><input type="text" id="hoursOpen" placeholder="e.g. Thursday 8am-5pm" required><br>
-        <b>Season: </b><input type="text" id="season" placeholder="e.g. May 13 - Nov 22, 2022" required><br>
-        <b>Website: </b><input type="text" id="resWeb">
-        <p><button type="button">Submit</button></p>
-    </form>
-</p>
-</div>
-<%- include('../partials/footer') -%>
+    <div class="content">
+        <h1>Add a resource</h1>
+        <p>Would you like to add a resource to our list? Add all relevant info here:</p>
+        <p>
+        <form action="/resadded" method="get">
+            <div class="form-group">
+                <label>Name of resource: </label><input type="text" id="resName"
+                    placeholder="e.g. Copley Square Farmers Market" class="input-control" required>
+            </div>
+
+            <div class="form-group">
+                <label>Address: </label><input type="text" id="resAddress" placeholder="e.g. 139 St James Ave"
+                    class="input-control" required>
+            </div>
+
+            <div class="form-group">
+                <label>Hours of operation: </label><input type="text" id="hoursOpen"
+                    placeholder="e.g. Thursday 8am-5pm" class="input-control" required>
+            </div>
+            <div class="form-group">
+                <label>Season: </label><input type="text" id="season" placeholder="e.g. May 13 - Nov 22, 2022"
+                    class="input-control" required>
+            </div>
+            <div class="form-group">
+                <label>Website: </label><input type="textarea" id="resWeb" class="input-control">
+            </div>
+
+            <div class="form-group">
+                <label>&nbsp;</label>
+                    <button type="button">Submit</button>
+               
+            </div>
+        </form>
+        </p>
+    </div>
+    <%- include('../partials/footer') -%>
