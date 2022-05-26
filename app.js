@@ -29,13 +29,18 @@ app.get('/', (request, response) => {
 app.get('/admin', (request, response) => {
     response.render('pages/admin');
 });
+app.get('/about', (request, response) => {
+    response.render('pages/about');
+});
 app.get('/contact', (request, response) => {
     response.render('pages/contact');
 });
 app.get('/login', (request, response) => {
     response.render('pages/login');
 });
-
+app.get('/formsubmitted', (request, response) => {
+    response.render('pages/formsubmitted');
+});
 
 // Contact form
 app.post("/formsubmitted", function(request, response){

@@ -16,6 +16,7 @@
     --resourcebin: #f7f7f7;
     --navhover: #8DC669;
 }
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.css");
 html,
 body {
     margin: 0px;
@@ -47,8 +48,8 @@ header {
     display: flex;
     text-align: center;
     display: inline-block;
-    /* float: none; */
-    /* vertical-align: top; */
+    float: none;
+    vertical-align: top;
 }
 
 /* .sidebar a:hover {
@@ -86,7 +87,6 @@ h3 {
     font-family: "Playfair Display";
 }
 footer {
-    /* background-color: var(--sidebar); */
     background-color: var(--text);
     color: var(--content);
     font-family: "Muli";
@@ -97,7 +97,6 @@ footer {
     /* position: fixed; */
 
 }
-
 a:link {
     text-decoration: none;
     color: var(--text);
