@@ -26,6 +26,8 @@ app.get('/', (request, response) => {
 //     }
 // });
 
+
+// Pages
 app.get('/admin', (request, response) => {
     response.render('pages/admin');
 });

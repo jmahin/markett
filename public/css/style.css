@@ -152,11 +152,13 @@ form {
     flex-wrap: wrap;
     justify-content: left;
     align-items: left;
-    margin: 0 auto;
     width: 50%;
+    
 }
 input[type=text]:hover {
     color: var(--lactive);
+    background-color: var(--resourcebin);
+    transition-duration: 0.5s;
 }
 .formwrapper {
     width: 400px;
@@ -170,6 +172,11 @@ input[type=textarea] {
     border-left: solid 0px;
     border-radius: 20px;
     color: var(--sidebartext);
+}
+input[type=textarea]:hover {
+    color: var(--lactive);
+    background-color: var(--resourcebin);
+    transition-duration: 0.5s;
 }
 button {
     background-color: var(--lhover);
