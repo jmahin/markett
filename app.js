@@ -17,7 +17,7 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (request, response) => {
-    response.render('pages/admin')
+    response.render('pages/index')
 })
 
 // app.get('/', (request, response) => {
@@ -26,15 +26,15 @@ app.get('/', (request, response) => {
 //     }
 // });
 
-// app.get('/admin', (request, response) => {
-//     response.render('pages/admin');
-// });
-// app.get('/contact', (request, response) => {
-//     response.render('pages/contact');
-// });
-// app.get('/login', (request, response) => {
-//     response.render('pages/login');
-// });
+app.get('/admin', (request, response) => {
+    response.render('pages/admin');
+});
+app.get('/contact', (request, response) => {
+    response.render('pages/contact');
+});
+app.get('/login', (request, response) => {
+    response.render('pages/login');
+});
 
 
 // Contact form
