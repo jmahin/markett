@@ -3,7 +3,7 @@
         <h1>Add a resource</h1>
         <p>Would you like to add a resource to our list? Add all relevant info here:</p>
         <p>
-        <form action="/resadded" method="get">
+        <form action="/resadded" method="PUT">
             <div class="form-group">
                 <label>Name of resource: </label><input type="text" id="resName"
                     placeholder="e.g. Copley Square Farmers Market" class="input-control" required>
@@ -15,8 +15,8 @@
             </div>
 
             <div class="form-group">
-                <label>Hours of operation: </label><input type="text" id="hoursOpen"
-                    placeholder="e.g. Thursday 8am-5pm" class="input-control" required>
+                <label>Hours of operation: </label><input type="text" id="hoursOpen" placeholder="e.g. Thursday 8am-5pm"
+                    class="input-control" required>
             </div>
             <div class="form-group">
                 <label>Season: </label><input type="text" id="season" placeholder="e.g. May 13 - Nov 22, 2022"
@@ -26,11 +26,11 @@
                 <label>Website: </label><input type="textarea" id="resWeb" class="input-control">
             </div>
 
-            <div class="form-group">
-                <label>&nbsp;</label>
-                    <button type="button">Submit</button>
-               
-            </div>
+
+            <label>&nbsp;</label>
+            <button type="button">Submit</button>
+
+
         </form>
         </p>
     </div>

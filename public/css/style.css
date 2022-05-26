@@ -263,6 +263,11 @@ tr:nth-child(even) {
 /* modify flex for resources */
 }
 
-@media only screen and (min-width: 900px) {
-
+@media only screen and (max-width: 480px) {
+    .nav {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
 }
