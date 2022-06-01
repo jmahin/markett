@@ -4,5 +4,5 @@ let resData = [
     hoursOpen: 'Thursday 1:30-6:30',
     season: 'first Thursday in June until the last Thursday before Thanksgiving',
     resWeb: 'brooklinefarmersmarket.com',
-    },
+    }
 ]

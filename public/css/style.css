@@ -12,7 +12,6 @@
     --h1: #0A210F;
     --h1content: #4B3F72;
     --tabn: #DFDFDF;
-    --box: #FFF;
     --resourcebin: #f7f7f7;
     --navhover: #8DC669;
 }
@@ -56,7 +55,7 @@ header {
     background-color: #E6FF9B;
 } */
 .content {
-    background-color: var(--box);
+    background-color: var(--lcolor);
     color: var(--text);
     padding: 2%;
     width: 100%;
@@ -82,6 +81,12 @@ h1:hover {
 .logo h1:hover {
     text-decoration: overline;
     font-style: italic;
+}
+.menu {
+    color: var(--text);
+    text-align: right;
+    display: none;
+    transition-duration: 0.5s;
 }
 h3 {
     font-family: "Playfair Display";
@@ -133,9 +138,9 @@ li a:link {
     margin: 2%;
 }
 li a:hover {
-    color: var(--box);
+    color: var(--lcolor);
     text-decoration: underline;
-    text-decoration-color: var(--box);
+    text-decoration-color: var(--lcolor);
     text-underline-offset: 10px;
 }
 b {
@@ -187,6 +192,7 @@ input[type=textarea] {
     border-left: solid 0px;
     border-radius: 20px;
     color: var(--sidebartext);
+    resize: both;
 }
 input[type=textarea]:hover {
     color: var(--lactive);
@@ -206,10 +212,10 @@ button {
 }
 button:hover {
     background-color: var(--h1content);
-    color: var(--box);
+    color: var(--lcolor);
 }
 checkbox:checked {
-    color: var(--box);
+    color: var(--lcolor);
     background-color: var(--sidebar);
 }
 table {
@@ -251,23 +257,22 @@ tr:nth-child(even) {
 .resource a:hover {
     color: var(--lactive);
 }
-@media only screen and (max-width: 600px) {
-    /* add a hamburger menu icon */
-    /* change the styling on links of sidebar in mobile */
-
-
-    /* .resource {
-    outline: 0px;
-    outline-offset: 0px;
-} */
-/* modify flex for resources */
-}
-
-@media only screen and (max-width: 480px) {
-    .nav {
+/* @media only screen and (max-width: 600px) {
+    nav {
         display: none;
+    }
+    header {
+        background-color: var(--lhover);
+        transition: ease 0.5s;
+        text-align: right;
+        height: 50px;
     }
     .logo {
-        display: none;
+        color: var(--text);
     }
-}
+    .menu:hover {
+        color: var(--lcolor);
+        transition: ease 0.5s;
+    }
+
+} */

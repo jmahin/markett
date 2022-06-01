@@ -6,5 +6,7 @@ const resModel = require("../models/resModel");
 
 router.route('/addaresource')
     .get(addResController.loadAddRes);
+
+router.route('/addaresource')
     .post(addResController.addNewRes);
     

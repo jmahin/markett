@@ -22,13 +22,26 @@ app.use(express.json());
 
 app.use('/', indexRoutes);
 // app.use('/admin', adminRoutes);
+app.use((request, response) => {
+    response.status(404).render('404', { title: '404'});
+});
 
 app.listen(PORT, () => {
     console.log(`The local host URL is http://localhost:${PORT}`);
 });
+
+
 
 mongoose.connect('mongodb://localhost:27017/markettproject');
 
 mongoose.connect(
     `mongodb+srv://jmahin:7q2gWgue2am2FMfY@Cluster0.mongodb.net/markettproject?retryWrites=true&w=majority`
 );
+
+mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+
+const Schema = mongoose.Schema;
+
+const resModel = mongoose.model('resModel', resourceSchema);

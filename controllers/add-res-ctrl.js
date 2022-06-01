@@ -10,7 +10,7 @@ module.exports = {
             hoursOpen: hoursOpen,
             season: season,
             resWeb: resWeb
-        })
+        });
         newRes.save();
         response.redirect("/resadded");
     }
