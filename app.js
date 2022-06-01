@@ -22,6 +22,7 @@ app.use(express.json());
 
 app.use('/', indexRoutes);
 // app.use('/admin', adminRoutes);
+
 app.use((request, response) => {
     response.status(404).render('404', { title: '404'});
 });
