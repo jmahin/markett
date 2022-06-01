@@ -4,7 +4,7 @@ npm-debug.log
 .env
 .DS_Store
 /public/images
-extracss.css
 views/pages/login.ejs
 node_modules
 index.html
+app.js
