@@ -154,6 +154,14 @@ input[type=text] {
     border-radius: 20px;
     color: var(--sidebartext);
 }
+input[type=url] {
+    border-right: solid 5px var(--lhover);
+    border-bottom: solid 5px var(--sidebar);
+    border-top: solid 0px;
+    border-left: solid 0px;
+    border-radius: 20px;
+    color: var(--sidebartext);
+}
 form {
     width: 500px;
 }
@@ -176,6 +184,11 @@ form {
     margin-top: -4px;
   }
 input[type=text]:hover {
+    color: var(--lactive);
+    background-color: var(--resourcebin);
+    transition-duration: 0.5s;
+}
+input[type=url]:hover {
     color: var(--lactive);
     background-color: var(--resourcebin);
     transition-duration: 0.5s;
@@ -257,7 +270,7 @@ tr:nth-child(even) {
 .resource a:hover {
     color: var(--lactive);
 }
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     nav {
         display: none;
     }
@@ -266,13 +279,15 @@ tr:nth-child(even) {
         transition: ease 0.5s;
         text-align: right;
         height: 50px;
+        color: var(--h1);
+        border-bottom: 5px solid var(--content);
     }
     .logo {
-        color: var(--text);
+        color: var(--h1);
     }
     .menu:hover {
         color: var(--lcolor);
         transition: ease 0.5s;
     }
 
-} */
+}

@@ -16,5 +16,11 @@ module.exports = {
     },
     loadContact: (request, response) => {
         response.render('pages/contact');
+    },
+    loadAddRes: (request, response) => {
+        response.render('pages/addaresource');
+    },
+    addResPost: (request, response) => {
+       
     }
 };

@@ -7,6 +7,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 const router = express.Router();
+const dotenv = require("dotenv"); //
 
 // Routes
 const indexRoutes = require('./routes/index-routes.js');
@@ -46,3 +47,6 @@ db.on('error', console.error.bind(console, 'connection error'));
 const Schema = mongoose.Schema;
 
 const resModel = mongoose.model('resModel', resourceSchema);
+
+
+dotenv.config(); //

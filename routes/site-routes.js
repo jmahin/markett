@@ -1,9 +1,8 @@
 const express = require('express');
-const app = express(); //
-const router = express.Router();
 const siteController = require('../controllers/site-ctrl');
-const resModel = require("../models/resModel");
+const router = express.Router();
 
+// Site routes
 router.route('/')
     .get(siteController.loadHomepage);
 
@@ -12,5 +11,9 @@ router.route('/about')
 
 router.route('/contact')
     .get(siteController.loadContact);
+
+router.route('/addaresource')
+    .get(siteController.loadAddRes);
+    .post(siteController.addResPost);
 
 module.exports = router;
