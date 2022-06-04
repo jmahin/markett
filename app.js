@@ -40,15 +40,3 @@ app.listen(PORT, () => {
     console.log(`The local host URL is http://localhost:${PORT}`);
 });
 
-// mongoose.connect('mongodb://localhost:27017/markettproject');
-
-// mongoose.connect(
-//     `mongodb+srv://jmahin:7q2gWgue2am2FMfY@Cluster0.mongodb.net/markettproject?retryWrites=true&w=majority`
-// );
-
-// mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
-// const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error'));
-
-// const Schema = mongoose.Schema;
-
