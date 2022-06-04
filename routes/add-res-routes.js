@@ -1,12 +1,11 @@
 const express = require('express');
-const app = express(); //
-const router = express.Router();
 const addResController = require('../controllers/add-res-ctrl');
 const resModel = require("../models/resModel");
-
-router.route('/addaresource')
-    .get(addResController.loadAddRes);
+const router = express.Router();
 
 router.route('/addaresource')
     .post(addResController.addNewRes);
+    // put in the future
+
+module.exports = router;
     

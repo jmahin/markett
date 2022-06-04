@@ -1,16 +1,13 @@
-const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
-const {Schema} = mongoose;
-
-const resourceList = mongoose.model('resourceSchema', resourceSchema);
+const { Schema } = mongoose;
 
 const resourceSchema = new Schema({
-    _id: ObjectId,
-    resName: string,
-    resAddress: string,
-    hoursOpen: string,
-    season: string,
-    resWeb: string
-  });
-  
-module.exports = resourceList;
+  resName: String,
+  resAddress: String,
+  hoursOpen: String,
+  season: String,
+  resWeb: String
+});
+const newRes = mongoose.model('newRes', resourceSchema);
+
+module.exports = newRes;

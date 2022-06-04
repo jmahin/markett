@@ -5,6 +5,7 @@ const router = express.Router();
 // Site routes
 router.route('/')
     .get(siteController.loadHomepage);
+    // have to pull info from db into homepage
 
 router.route('/about')
     .get(siteController.loadAbout);
@@ -14,6 +15,5 @@ router.route('/contact')
 
 router.route('/addaresource')
     .get(siteController.loadAddRes);
-    .post(siteController.addResPost);
 
 module.exports = router;

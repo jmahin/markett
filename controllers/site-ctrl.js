@@ -1,4 +1,3 @@
-const data = require('../data/data');
 const ResModel = require('../models/resModel');
 
 module.exports = {
@@ -19,8 +18,6 @@ module.exports = {
     },
     loadAddRes: (request, response) => {
         response.render('pages/addaresource');
-    },
-    addResPost: (request, response) => {
-       
     }
+
 };

@@ -1,10 +1,9 @@
-const data = require('../data/data');
 const ResModel = require('../models/resModel');
 
-module.exports = {
+module.exports = { //duplicate of site-ctrl?
     addNewRes: (request, response) => {
         const {resName, resAddress, hoursOpen, season, resWeb} = request.body;
-        const newRes = new Res ({
+        const newRes = new ResPost ({
             resName: resName,
             resAddress: resAddress,
             hoursOpen: hoursOpen,
@@ -15,3 +14,4 @@ module.exports = {
         response.redirect("/resadded");
     }
     }
+    
