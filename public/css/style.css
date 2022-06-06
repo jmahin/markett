@@ -23,6 +23,9 @@ body {
     color: var(--text);
     letter-spacing: -1%;
 }
+html {
+    height: 100%;
+}
 p {
     line-height: 1.5;
 }
@@ -52,7 +55,8 @@ header {
     background-color: var(--lcolor);
     color: var(--text);
     padding: 2%;
-    display: inline-block;
+    height: 100%;
+    /* display: inline-block; */
     overflow-y: auto;
 }
 h1 {
