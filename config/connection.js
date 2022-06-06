@@ -6,7 +6,7 @@ mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology
     console.log("Successful connection with MongoDB Server");
   }
   else {
-    console.log("Error with MongoDB's connectivity");
+    console.log("Error with MongoDB's connectivity!");
     console.log(err)
   }
 });

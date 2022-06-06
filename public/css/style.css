@@ -54,8 +54,7 @@ header {
     background-color: var(--lcolor);
     color: var(--text);
     padding: 2%;
-    width: 100%;
-    height: 80%;
+    display: inline-block;
     overflow-y: auto;
 }
 h1 {
@@ -89,10 +88,8 @@ h3 {
 footer {
     background-color: var(--text);
     color: var(--content);
-    font-family: "Muli";
     text-align: center;
     padding: 1%;
-    height: 100vh;
     float: bottom;
 
 }
@@ -174,7 +171,7 @@ form {
     margin-right: 8px;
     padding: 4px;
     margin-top: -4px;
-  }
+}
 input[type=text]:hover {
     color: var(--lactive);
     background-color: var(--resourcebin);
@@ -259,14 +256,18 @@ tr:nth-child(even) {
     color: var(--lactive);
 }
 @media only screen and (max-width: 600px) {
-    nav {
+    /* nav {
         display: none;
+    } */
+    nav {
+        display: flex;
+        justify-content: right;
     }
     header {
         background-color: var(--lhover);
         transition: ease 0.5s;
         text-align: right;
-        height: 50px;
+        height: 100px;
         color: var(--h1);
     }
     .logo h1 {
@@ -274,6 +275,13 @@ tr:nth-child(even) {
     }
     form {
         width: fit-content;
+    }
+    .allresources {
+        flex-direction: column;
+    }
+    .resource {
+        width: 300px;
+        max-width: 100%;
     }
     /* .menu:hover {
         color: var(--lcolor);
