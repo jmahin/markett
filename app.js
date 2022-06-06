@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.json());
 
-app.use('/', indexRoutes);
+app.use(indexRoutes);
 app.use(siteRoutes);
 app.use(addResRoutes);
 

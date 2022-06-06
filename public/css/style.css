@@ -15,7 +15,6 @@
     --resourcebin: #f7f7f7;
     --navhover: #8DC669;
 }
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.css"); */
 html,
 body {
     margin: 0px;
@@ -32,7 +31,6 @@ p {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
-    /* height: 80%; */
     width: 100%;
     margin: 0px;
     padding: 0px;
