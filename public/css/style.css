@@ -282,7 +282,10 @@ tr:nth-child(even) {
         width: fit-content;
     }
     .allresources {
+        display: flex;
         flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
     .resource {
         width: 300px;
