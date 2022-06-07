@@ -8,7 +8,7 @@ const path = require('path');
 // const mongoose = require("mongoose");
 // const mongoDB = require("mongodb");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const router = express.Router();
 
 // Route
