@@ -87,6 +87,9 @@ h1:hover {
 h3 {
     font-family: "Playfair Display";
 }
+h3:hover {
+    color: var(--h1content);
+}
 footer {
     background-color: var(--text);
     color: var(--content);
@@ -203,7 +206,7 @@ input[type=textarea]:hover {
     background-color: var(--resourcebin);
     transition-duration: 0.5s;
 }
-button {
+input[type=button] {
     background-color: var(--lhover);
     font-size: 1em;
     text-transform: uppercase;
@@ -214,7 +217,7 @@ button {
     font-family: "Space Grotesk";
     font-weight: bold;
 }
-button:hover {
+input[type=button]:hover {
     background-color: var(--h1content);
     color: var(--lcolor);
 }
@@ -246,7 +249,7 @@ tr:nth-child(even) {
     background-color: var(--resourcebin);
     padding: 2%;
     width: 20%;
-    margin: .5%;
+    margin: 1%;
     border-top-left-radius: 5%;
     border-bottom-right-radius: 5%;
     overflow-wrap: break-word;

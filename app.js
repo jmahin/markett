@@ -11,10 +11,7 @@ const app = express();
 const PORT = 3000;
 const router = express.Router();
 
-// Routes
-// const indexRoutes = require('./routes/index-routes.js');
-// const siteRoutes = require('./routes/site-routes.js');
-// const addResRoutes = require('./routes/add-res-routes');
+// Route
 const routes = require('./routes/index-routes');
 
 module.exports = router;
@@ -27,16 +24,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.json());
 
-// app.use(indexRoutes);
-// app.use(siteRoutes);
-// app.use(addResRoutes);
-
 app.use(routes);
 require('./config/connection');
-
-// app.use((request, response) => {
-//     response.status(404).render('404', { title: '404'});
-// });
 
 app.listen(PORT, () => {
     console.log(`The local host URL is http://localhost:${PORT}`);
