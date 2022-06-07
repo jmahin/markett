@@ -1,6 +1,6 @@
 // Requirements
-const dotenv = require("dotenv");
-require('dotenv').config();
+// const dotenv = require("dotenv");
+// require('dotenv').config();
 const express = require('express');
 const methodOverride = require('method-override');
 const morgan = require('morgan');
@@ -22,10 +22,10 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
-app.use(express.json());
+// app.use(express.json());
 
 app.use(routes);
-require('./config/connection');
+// require('./config/connection');
 
 app.listen(PORT, () => {
     console.log(`The local host URL is http://localhost:${PORT}`);
